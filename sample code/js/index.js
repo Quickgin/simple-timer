@@ -77,7 +77,7 @@ document.getElementById('timetext').value=minute+':'+second;
          if (localStorage.count) {
             localStorage.count = Number(localStorage.count)+1;
         } else {
-            localStorage.count = 0;
+            localStorage.count = 1;
         }
          document.getElementById("result").innerHTML="Tomato Number:"+localStorage.count;
      }
