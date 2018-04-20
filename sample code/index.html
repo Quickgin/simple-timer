@@ -14,33 +14,33 @@
 </head>
 
 <body>
-    
-     <div data-role="panel" id="myPanel">
+<div data-role="panel" id="myPanel">
     <h1>Welcome To My Homepage</h1>
-    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-btn-icon-left">Go to Page One</a>
-    <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-btn-icon-left">Go to Page Two</a>   
+    <a href="#pageone" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-btn-icon-left">Go to Timer</a>
+    <a href="#pagetwo" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-btn-icon-left">Go to Cards Shop</a>   
     <a href="#pagethree" data-rel="close" class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-a ui-btn-icon-left">Go to Page Three</a> 
   </div>  
-
-<div data-role="page" id="pageone">
     
+    
+<div data-role="page" id="pageone">  
 <div data-role="header">
   <h1>Page Header</h1>
         <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left" style="margin-top: 10px">Open Panel</a>
-	
-
-	
   </div>  
         
   <div data-role="main" class="ui-content">
-
-    <div id="result">Tomato Number:0</div>
-      
+     <div id="result">Tomato Number:0</div>
+      <label for="flipswitch">Sensor:</label>
+      	<select name="flipswitch" id="flipswitch" data-role="slider">
+        	<option value="off">Off</option>
+        	<option value="on">On</option>
+      	</select>
+    
     <div style="text-align: center">
-  <input type="text" id="timetext" value="1:00" readonly><br>
+  <input type="text" id="timetext" value="1:00" readonly style="border-radius:10px;"><br>
   <button type="button" onclick="start()" id="startbutton">start</button> 
-  <button type="button" onclick="stop()" id="stopbutton">stop</button> 
-  <button type="button" onclick="Reset()" id="resetbutton">reset</button>
+  <button type="button" onclick="stop()" id="stopbutton" style="display:none">stop</button> 
+  <button type="button" onclick="Reset()" id="resetbutton" style="display:none">reset</button>
 </div>
     </div>
    
@@ -52,23 +52,67 @@
 
     
     <div data-role="page" id="pagetwo">
+   
 
   <div data-role="header">
   <h1>Page Header</h1>
-          <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left" style="margin-top: 10px">Open Panel</a>
+          <a href="#myPanel" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-bars ui-btn-icon-left" >Open Panel</a>
   </div>  
         
   <div data-role="main" class="ui-content">
-    <p>This is Page Two.</p>
-
+    <p>Cards Shop</p>
+	  
+<table border="0" white-space="nowrap" width="98%" valign="middle" align="center" cellspacing=20 cellpadding=10>
+    <tr>
+        
+        
+        <td align="center"><img src="timg.jpg" alt="" width="120" height="180"/>
+        <p>two tomatoes</p>
+		<!--<a href="#detailpage1" style="text-decoration:none;color:#000">-->
+            <button style="width:130px;height:40px;margin-top: 10px" type="button" id="detail1" onclick="detail1()">view detail</button>
+		<button style="width:130px;height:40px;margin-top: 10px" type="button" id="collect1">collect it</button> 
+		</td>
+        
+        
+        <td align="center"><img src="timg.jpg" alt="" width="120" height="180"/>
+        <p>four tomatoes</p>
+		<button style="width:130px;height:40px;margin-top: 10px" type="button" id="detail2">view detail</button>
+		<button style="width:130px;height:40px;margin-top: 10px" type="button" id="collect2">collect it</button> 
+		</td>
+        
+        
+    </tr>
+    <tr>
+        <td align="center"><img src="timg.jpg" alt="" width="120" height="180"/></td>
+        <td align="center"><img src="timg.jpg" alt="" width="120" height="180"/></td>
+    </tr>
+</table>
+	  
   </div>
    
+		
   <div data-role="footer">
   <h1>Page Footer</h1>
   </div>
 </div> 
 
 
+<div data-role="page" id="detailpage1">  
+<div data-role="header">
+  <h1>Page Header</h1>
+    
+    <a href="#pagetwo" class="ui-btn ui-btn-inline ui-corner-all ui-shadow ui-icon-carat-l ui-btn-icon-left" style="margin-top: 10px">Return</a>
+  <div data-role="footer">
+  <h1>Page Footer</h1>
+  </div>
+</div>   
+ </div> 
+    
+    
+    
+    
+    
+    
     
 
 <div data-role="page" id="pagethree">
@@ -87,5 +131,6 @@
   <h1>Page Footer</h1>
   </div>
 </div> 
+	
 </body>
 </html>

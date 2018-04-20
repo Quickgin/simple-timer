@@ -99,3 +99,15 @@ document.getElementById('timetext').value=minute+':'+second;
     {
       window.clearInterval(int);
     }
+
+
+function detail1(){
+    if (localStorage.count<2)
+	{
+        console.log("not enough");
+    }
+    else if (localStorage.count=2||localStorage.count>2)
+        {
+            window.location.href="#detailpage1";
+        }
+}
