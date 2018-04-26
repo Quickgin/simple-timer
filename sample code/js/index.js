@@ -105,8 +105,22 @@ function detail1(){
     if (localStorage.count<2)
 	{
         console.log("not enough");
+		alert("You tomatoes are not enough!");
     }
     else if (localStorage.count=2||localStorage.count>2)
+        {
+            window.location.href="#detailpage1";
+        }
+}
+
+
+function detail2(){
+    if (localStorage.count<4)
+	{
+        console.log("not enough");
+		alert("You tomatoes are not enough!");
+    }
+    else if (localStorage.count=4||localStorage.count>4)
         {
             window.location.href="#detailpage1";
         }
