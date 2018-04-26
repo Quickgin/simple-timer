@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>Timer Demo</name>
+    <name>Simple Timer</name>
 	
 	
 <preference name='phonegap-version' value='cli-7.0.1' />	
