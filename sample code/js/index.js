@@ -1,11 +1,17 @@
 
 
 $(document).on('pageinit', '#pageone',  function(){
-
     console.log("pageone - pageinit");
-    document.getElementById("result").innerHTML="Tomato Number:"+localStorage.count;
     
+    if(localStorage.count) {
     
+        document.getElementById("result").innerHTML="Tomato Number:"+localStorage.count;
+    }
+    
+    else {
+        localStorage.count = 0;
+        document.getElementById("result").innerHTML="Tomato Number:"+localStorage.count;
+    }
 });
 
 
