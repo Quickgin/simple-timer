@@ -1,4 +1,4 @@
-Backendless.initApp("34524CA9-97F4-3BAF-FFC0-1B8907709E00","DA9428F1-A247-B1BD-FFEF-AC2C81197E00");
+
 
 $(document).on('pageinit', '#pageone',  function(){
 
@@ -70,6 +70,7 @@ function timer(Count)
     if(second==0&&minute==0){
         stop();
         count();
+        navigator.notification.beep(3);	
 
         
     }
