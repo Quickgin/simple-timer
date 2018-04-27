@@ -109,12 +109,12 @@ document.getElementById('timetext').value=minute+':'+second;
 
 
 function detail1(){
-    if (localStorage.count<2)
+    if (localStorage.count<1)
 	{
         console.log("not enough");
 		alert("You tomatoes are not enough!");
     }
-    else if (localStorage.count==2||localStorage.count>2)
+    else if (localStorage.count==1||localStorage.count>1)
         {
             window.location.href="#detailpage1";
         }
